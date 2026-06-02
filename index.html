@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LensCraft Image Gallery</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>📸 LensCraft Image Gallery</h1>
+    <p class="subtitle">
+        Explore Nature, City, Travel, People & Abstract Photography
+    </p>
+
+    <div class="controls">
+        <input type="text" id="searchBox" placeholder="🔍 Search images...">
+        <button id="shuffleBtn">🔀 Shuffle</button>
+    </div>
+
+    <p id="imageCount"></p>
+
+    <div class="filters">
+        <button class="filter active" data-category="all">All</button>
+        <button class="filter" data-category="nature">Nature</button>
+        <button class="filter" data-category="city">City</button>
+        <button class="filter" data-category="travel">Travel</button>
+        <button class="filter" data-category="people">People</button>
+        <button class="filter" data-category="abstract">Abstract</button>
+    </div>
+</header>
+
+<div class="gallery" id="gallery"></div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+
+    <button class="nav prev">&#10094;</button>
+
+    <div class="lightbox-content">
+        <img id="lightboxImg">
+        <p id="caption"></p>
+    </div>
+
+    <button class="nav next">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
